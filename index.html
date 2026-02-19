@@ -449,6 +449,25 @@
             font-style: italic;
             color: var(--text-primary);
         }
+        .flow-sources {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+        }
+        .flow-sources a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border-light);
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .flow-sources a:hover { color: var(--brand); border-color: var(--brand); }
+        .flow-sources-label {
+            font-weight: 600;
+            letter-spacing: 0.04em;
+        }
         @media (max-width: 900px) {
             .flow-row {
                 grid-template-columns: 1fr;
@@ -1205,6 +1224,14 @@
             </div>
 
             <div class="flow-callout reveal">The retrieval pool IS the search index. If you're not ranking, you're not in the pool LLMs draw from.</div>
+
+            <div class="flow-sources reveal">
+                <span class="flow-sources-label">Sources:</span>
+                <a href="https://blogs.bing.com/search/January-2025/Introducing-Grounding-with-Bing-Search-in-Azure-AI-Agent-Service" target="_blank">Microsoft Bing &mdash; Grounding with Bing Search</a>
+                <a href="https://www.searchenginejournal.com/perplexity-ai-interview-explains-how-ai-search-works/565395/" target="_blank">SEJ &mdash; How Perplexity's AI Search Works</a>
+                <a href="https://blog.bytebytego.com/p/how-perplexity-built-an-ai-google" target="_blank">ByteByteGo &mdash; RAG Architecture Deep Dive</a>
+                <a href="https://about.ads.microsoft.com/en/blog/post/october-2025/optimizing-your-content-for-inclusion-in-ai-search-answers" target="_blank">Microsoft &mdash; Optimizing for AI Search Answers</a>
+            </div>
         </div>
     </section>
 

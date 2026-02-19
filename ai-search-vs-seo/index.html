@@ -527,6 +527,41 @@
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
+        /* Metrics */
+        .metrics-block { margin-top: 2rem; }
+        .metrics-heading {
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--brand);
+            opacity: 0.7;
+            margin-bottom: 1rem;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 0.75rem;
+        }
+        .metric-item {
+            padding: 1.1rem 1.25rem;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--dark-border);
+            border-radius: 10px;
+        }
+        .metric-name {
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+        .metric-desc {
+            font-size: 0.8rem;
+            color: var(--text-muted-light);
+            line-height: 1.5;
+        }
+
         /* ============================
            QUOTES
            ============================ */
@@ -1300,6 +1335,32 @@
 
             <div class="flow-callout reveal" style="margin-top: 3rem; background: rgba(255,255,255,0.04); border-left-color: rgba(236, 78, 54, 0.5); color: var(--text-light);">
                 <a href="https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/" target="_blank" style="color: var(--brand); text-decoration: none; border-bottom: 1px solid rgba(236, 78, 54, 0.4);">SparkToro research</a> (2,961 AI responses across ChatGPT, Claude, and Google) found that AI platforms return different brand recommendation lists more than 99% of the time for identical queries. Same list in the same order? Less than 0.1%. Fishkin's conclusion: "Any tool that gives a 'ranking position in AI' is full of baloney." Visibility percentage across many runs shows some consistency&mdash;exact ranking does not.
+            </div>
+
+            <div class="metrics-block reveal">
+                <div class="metrics-heading">Reliable proxy metrics for AI search impact</div>
+                <div class="metrics-grid">
+                    <div class="metric-item">
+                        <div class="metric-name">Impressions Growth</div>
+                        <div class="metric-desc">Content footprint expanding in the indexes AI systems query.</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-name">Branded Search Volume</div>
+                        <div class="metric-desc">AI brand mentions drive branded queries in Google&mdash;measurable lift.</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-name">Direct Traffic</div>
+                        <div class="metric-desc">Users who encounter your brand in AI answers and navigate directly.</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-name">AI Referral Traffic</div>
+                        <div class="metric-desc">Direct visits from ChatGPT, Perplexity, and other AI platforms&mdash;small but high-converting.</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-name">Question-Based Queries</div>
+                        <div class="metric-desc">Rankings on the exact queries triggering AI Overviews&mdash;the overlap zone.</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

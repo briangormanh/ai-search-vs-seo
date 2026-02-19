@@ -617,8 +617,24 @@
         /* ============================
            APPROACH PILLARS
            ============================ */
-        .pillars-grid {
+        .pillars-section {
             margin-top: 3.5rem;
+        }
+        .pillars-group-label {
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--brand);
+            opacity: 0.7;
+            margin-bottom: 1rem;
+            padding-left: 0.25rem;
+        }
+        .pillars-group-label:not(:first-child) {
+            margin-top: 2.5rem;
+        }
+        .pillars-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
@@ -631,6 +647,13 @@
             transition: border-color 0.3s;
         }
         .pillar-card:hover { border-color: rgba(236, 78, 54, 0.3); }
+        .pillar-accent {
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            color: var(--brand);
+            line-height: 1.2;
+            margin-bottom: 0.6rem;
+        }
         .pillar-num {
             font-family: var(--serif);
             font-size: 1.75rem;
@@ -1360,52 +1383,68 @@
             <h2 class="section-title reveal">Nine Pillars. Both Channels.</h2>
             <p class="section-subtitle reveal">Everything we do is designed to build visibility where it matters&mdash;in search engines and in the AI systems that depend on them.</p>
 
-            <div class="pillars-grid">
-                <div class="pillar-card reveal">
-                    <div class="pillar-num">01</div>
-                    <div class="pillar-title">Strong SEO Foundation</div>
-                    <div class="pillar-desc">Rankings feed the retrieval pool that LLMs draw from. 52% of AI citations come from top-10 results. The foundation IS the distribution mechanism.</div>
+            <div class="pillars-section">
+
+                <div class="pillars-group-label reveal">The Foundation</div>
+                <div class="pillars-grid">
+                    <div class="pillar-card reveal">
+                        <div class="pillar-num">01</div>
+                        <div class="pillar-title">Strong SEO Foundation</div>
+                        <div class="pillar-accent">52% of AI citations come from top-10 results.</div>
+                        <div class="pillar-desc">Rankings feed the retrieval pool that LLMs draw from. The foundation IS the distribution mechanism.</div>
+                    </div>
+                    <div class="pillar-card reveal reveal-delay-1">
+                        <div class="pillar-num">02</div>
+                        <div class="pillar-title">Structured Content</div>
+                        <div class="pillar-desc">Formatted for both search engines and LLM extraction&mdash;clear headings, self-contained paragraphs, Q&amp;A blocks, and tables that can be lifted cleanly into AI answers.</div>
+                    </div>
+                    <div class="pillar-card reveal">
+                        <div class="pillar-num">03</div>
+                        <div class="pillar-title">Deep Audience Research</div>
+                        <div class="pillar-desc">We map your audience's questions, pain points, and search behavior&mdash;so every page answers a real query they'd type into Google, ChatGPT, or Perplexity. Content mapped to actual intent performs in both channels.</div>
+                    </div>
+                    <div class="pillar-card reveal reveal-delay-1">
+                        <div class="pillar-num">04</div>
+                        <div class="pillar-title">Subject Matter Expert Content</div>
+                        <div class="pillar-accent">62% of one client's traffic from SME pages alone.</div>
+                        <div class="pillar-desc">30-minute sessions with clients extract real expertise no competitor can replicate&mdash;first-person authority, unique knowledge, and the kind of specificity AI-generated content can't produce.</div>
+                    </div>
                 </div>
-                <div class="pillar-card reveal reveal-delay-1">
-                    <div class="pillar-num">02</div>
-                    <div class="pillar-title">Structured Content</div>
-                    <div class="pillar-desc">Formatted for both search engines and LLM extraction&mdash;clear headings, self-contained paragraphs, Q&amp;A blocks, and tables that can be lifted cleanly into AI answers.</div>
+
+                <div class="pillars-group-label reveal">Amplification</div>
+                <div class="pillars-grid">
+                    <div class="pillar-card reveal">
+                        <div class="pillar-num">05</div>
+                        <div class="pillar-title">Content Repurposing</div>
+                        <div class="pillar-desc">One SME session becomes blog posts, long-form video, short-form clips, and social posts. The same expertise appears across every platform LLMs monitor&mdash;multiplying visibility from a single investment of time.</div>
+                    </div>
+                    <div class="pillar-card reveal reveal-delay-1">
+                        <div class="pillar-num">06</div>
+                        <div class="pillar-title">Expansive PR &amp; Social</div>
+                        <div class="pillar-desc">Builds both links AND brand mentions across platforms LLMs monitor&mdash;Reddit, YouTube, LinkedIn, and news. When clients can lean into social, we prioritize it.</div>
+                    </div>
                 </div>
-                <div class="pillar-card reveal">
-                    <div class="pillar-num">03</div>
-                    <div class="pillar-title">Deep Audience Research</div>
-                    <div class="pillar-desc">We map your audience's questions, pain points, and search behavior in detail&mdash;so every page we build answers a real query or prompt they'd type into Google, ChatGPT, or Perplexity. Content mapped to actual audience intent performs in both channels.</div>
+
+                <div class="pillars-group-label reveal">Intelligence &amp; Measurement</div>
+                <div class="pillars-grid">
+                    <div class="pillar-card reveal">
+                        <div class="pillar-num">07</div>
+                        <div class="pillar-title">Aggregate Prompt &amp; Fan-Out Analysis</div>
+                        <div class="pillar-desc">We monitor how LLMs represent brands across ChatGPT, Perplexity, Gemini, and Claude&mdash;and analyze the sub-queries AI generates to map full topical coverage needs.</div>
+                    </div>
+                    <div class="pillar-card reveal reveal-delay-1">
+                        <div class="pillar-num">08</div>
+                        <div class="pillar-title">Audience Channel Research</div>
+                        <div class="pillar-desc">SparkToro-powered analysis of where audiences actually spend time&mdash;beyond Google. The answer to LLM visibility isn't LLM optimization. It's being everywhere your audience is.</div>
+                    </div>
+                    <div class="pillar-card reveal" style="grid-column: 1 / -1;">
+                        <div class="pillar-num">09</div>
+                        <div class="pillar-title">Content Freshness</div>
+                        <div class="pillar-accent">80%+ of AI-driven traffic goes to pages updated within 2 years.</div>
+                        <div class="pillar-desc">Ongoing optimization keeps content in the freshness window that AI systems prefer. This isn't just maintenance&mdash;it's actively feeding AI visibility.</div>
+                    </div>
                 </div>
-                <div class="pillar-card reveal reveal-delay-1">
-                    <div class="pillar-num">04</div>
-                    <div class="pillar-title">Subject Matter Expert Content</div>
-                    <div class="pillar-desc">30-minute sessions with clients extract real expertise no competitor can replicate. This feeds the E-E-A-T signals that both Google and LLMs prioritize&mdash;first-person authority, unique knowledge, and the kind of specificity AI-generated content can't produce.</div>
-                </div>
-                <div class="pillar-card reveal">
-                    <div class="pillar-num">05</div>
-                    <div class="pillar-title">Content Repurposing Engine</div>
-                    <div class="pillar-desc">One 30-minute SME session becomes blog posts, long-form video, short-form clips, and text posts for LinkedIn, Facebook, and beyond. The same expertise appears across every platform LLMs monitor&mdash;multiplying your visibility from a single investment of time.</div>
-                </div>
-                <div class="pillar-card reveal reveal-delay-1">
-                    <div class="pillar-num">06</div>
-                    <div class="pillar-title">Expansive PR &amp; Social</div>
-                    <div class="pillar-desc">Builds both links AND brand mentions across platforms LLMs monitor&mdash;Reddit, YouTube, LinkedIn, and news. When clients can lean into social, we prioritize it. Unlinked mentions carry more weight in AI than traditional SEO.</div>
-                </div>
-                <div class="pillar-card reveal">
-                    <div class="pillar-num">07</div>
-                    <div class="pillar-title">Aggregate Prompt &amp; Fan-Out Analysis</div>
-                    <div class="pillar-desc">We monitor how LLMs represent brands across ChatGPT, Perplexity, Gemini, and Claude&mdash;and analyze the sub-queries AI generates to map full topical coverage needs. These insights feed directly back into our SEO and content strategy.</div>
-                </div>
-                <div class="pillar-card reveal reveal-delay-1">
-                    <div class="pillar-num">08</div>
-                    <div class="pillar-title">Audience Channel Research</div>
-                    <div class="pillar-desc">SparkToro-powered analysis of where audiences actually spend time&mdash;beyond Google. The answer to LLM visibility isn't LLM optimization. It's being everywhere your audience is.</div>
-                </div>
-                <div class="pillar-card reveal" style="grid-column: 1 / -1;">
-                    <div class="pillar-num">09</div>
-                    <div class="pillar-title">Content Freshness</div>
-                    <div class="pillar-desc">Ongoing optimization keeps content in the 2-year freshness window that AI systems prefer. 80%+ of AI-driven traffic goes to recently updated pages. This isn't just maintenance&mdash;it's actively feeding AI visibility.</div>
-                </div>
+
             </div>
 
         </div>
